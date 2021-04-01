@@ -1,6 +1,7 @@
 package lab2;
 
 public class Main {
+
 //    static int mulNum1 = 8;
 //    static int mulNum2 = 4;
 
@@ -15,8 +16,12 @@ public class Main {
 //        System.out.println(divide1);
 //        System.out.print(division(num1, num2));
         // Division
-        double divide2 = division(34, 5);
-        System.out.println(divide2);
+        double divide = division(34, 5);
+        System.out.println(divide);
+
+        // Modulo
+        int moduloOperation = remainder(6, 3);
+        System.out.println(moduloOperation);
     }
 
     public static int multiply(int first, int second) {
@@ -27,6 +32,11 @@ public class Main {
     public static int division(int first, int second) {
         int division = first / second;
         return division;
+    }
+
+    public static int remainder(int first, int second) {
+        int remainder = (first % second);
+        return remainder;
     }
 
 }
