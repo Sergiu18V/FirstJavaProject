@@ -27,6 +27,12 @@ public class Main {
 
         //EXERCISE 5
         exercise5();
+
+        // EXERCISE 6 - Temperature converter
+        System.out.println("Fahrenheit temperature in celsius is: " + temperature(60));
+
+        //EXERCISE 7
+        System.out.println("Inches to meter: " + inchToMeter(100));
     }
 
 
@@ -71,12 +77,20 @@ public class Main {
     }
 
     public static void exercise5() {
-        System.out.println( " +\" \" \" \" \"+" );
+        System.out.println(" +\" \" \" \" \"+" );
         System.out.println("[|  o   o  |]");
         System.out.println(" |    ^    | ");
         System.out.println(" |  ' _ '  | ");
         System.out.println(" +---------+ ");
     }
 
+    public static double temperature(float far) {
+        return (double)5/(double)9 * (far -32);
+
+    }
+
+    public static double inchToMeter(double inch) {
+        return inch * 0.0254;
+    }
 }
 
