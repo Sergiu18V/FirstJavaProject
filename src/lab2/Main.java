@@ -31,10 +31,14 @@ public class Main {
         // EXERCISE 6 - Temperature converter
         System.out.println("Fahrenheit temperature in celsius is: " + temperature(60));
 
-        //EXERCISE 7
+        //EXERCISE 7 - Inches to meters
         System.out.println("Inches to meter: " + inchToMeter(100));
-    }
 
+        // EXERCISE 8 - SPEEDS
+        System.out.println("Speed in meters is: " + meterSpeed(5000, 1, 0, 0));
+        System.out.println("Speed in km is: " + kmSpeed(5000, 1));
+        System.out.println("Speed in miles is: " + mileSpeed(5000, 1));
+    }
 
 
 
@@ -92,5 +96,20 @@ public class Main {
     public static double inchToMeter(double inch) {
         return inch * 0.0254;
     }
+
+
+    public static int meterSpeed(int meters, int hours, int minutes, int seconds) {
+        return meters / (hours * 60 + minutes * 60 + seconds * 60);
+    }
+
+    public static int kmSpeed(int meters, int hours) {
+        return (meters / 100) / hours;
+    }
+
+    public static int mileSpeed(int meters, int hours) {
+        return (meters / 1609) / hours;
+    }
+
 }
+
 
