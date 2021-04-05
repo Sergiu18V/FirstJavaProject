@@ -23,7 +23,7 @@ public class Main {
         exercise3();
 
         // EXERCISE 4 - Sum of 3 numbers
-        System.out.println("The sum of the three numbers is: " + sumOf3Nrs(7, 15, 22));
+        System.out.println("The average sum of the three numbers is: " + sumOf3Nrs(7, 15, 22));
 
         //EXERCISE 5
         exercise5();
@@ -77,7 +77,7 @@ public class Main {
     }
 
     public static int sumOf3Nrs(int num1, int num2, int num3) {
-        return num1 + num2 + num3;
+        return (num1 + num2 + num3) / 3;
     }
 
     public static void exercise5() {
