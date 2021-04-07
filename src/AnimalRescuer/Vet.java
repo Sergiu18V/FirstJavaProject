@@ -8,7 +8,7 @@ public class Vet {
         return name;
     }
 
-    public String getAge() {
+    public String getSpecialization() {
         return specialization;
     }
 
