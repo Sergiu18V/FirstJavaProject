@@ -1,5 +1,13 @@
 package AnimalRescuer;
 
 public class Activity {
-    String activity = "Walking";
+    private String activity = "Walking";
+
+    public String getActivity() {
+        return activity;
+    }
+
+    public void setActivity(String newActivity) {
+        this.activity = newActivity;
+    }
 }

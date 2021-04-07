@@ -1,6 +1,10 @@
 package AnimalRescuer;
 
 public class Adopter {
-    String name = "Rox";
+    private String name = "Rox";
     int money = 500;
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
 }
