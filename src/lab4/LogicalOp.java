@@ -3,7 +3,7 @@ package lab4;
 // HOMEWORK 1
 public class LogicalOp {
     public void printToHundred(int number) {
-        for (int i = number; i <= 100; i++) {
+        for (int i = number; i <= number; i++) {
             System.out.println("The number is: " + i);
         }
     }
